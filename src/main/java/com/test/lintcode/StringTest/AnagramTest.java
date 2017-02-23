@@ -5,13 +5,13 @@ import java.util.Arrays;
 /**
  *
  * 写出一个函数 anagram(s, t) 判断两个字符串是否可以通过改变字母的顺序变成一样的字符串。
- * Created by root on 2017/2/19.
+ * Created by le on 2017/2/19.
  *
  */
 public class AnagramTest {
 
     public static void main(String[] args) {
-        System.out.println(1 << 16);
+        System.out.println(anagram2("",""));
     }
 
     public static boolean anagram(String s, String t) {
