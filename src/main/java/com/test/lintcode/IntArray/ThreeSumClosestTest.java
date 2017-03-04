@@ -11,7 +11,7 @@ import java.util.Map;
  * 只需要返回三元组之和，无需返回三元组本身
  * 例如 S = [-1, 2, 1, -4] and target = 1. 和最接近 1 的三元组是 -1 + 2 + 1 = 2.
  */
-public class ThreeSumClosest {
+public class ThreeSumClosestTest {
 
     public static void main(String[] args) {
         int[] test = new int[]{2,7,11,15};

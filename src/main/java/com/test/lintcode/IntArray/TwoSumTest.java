@@ -1,5 +1,8 @@
 package com.test.lintcode.IntArray;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by le on 2017/2/26.
  * 给一个整数数组，找到两个数使得他们的和等于一个给定的数 target。
@@ -7,7 +10,7 @@ package com.test.lintcode.IntArray;
  * 给出 numbers = [2, 7, 11, 15], target = 9, 返回 [1, 2].
  */
 public class TwoSumTest {
-
+    //1976ms
     public int[] twoSum(int[] numbers, int target) {
         int[] ints = new int[2];
         for(int i=0;i<numbers.length;i++){
@@ -20,6 +23,22 @@ public class TwoSumTest {
 
             }
         }
+        return ints;
+    }
+
+    //1187ms
+    public int[] twoSum2(int[] numbers, int target){
+        int[] ints = new int[2];
+        Map<Integer,Integer> map = new HashMap<>();
+        for(int i=0;i<numbers.length;i++){
+            if(map.containsKey(numbers[i])){
+                ints[0] = map.get(numbers[i]);
+                ints[1] = i+1;
+            }
+            map.put(target-numbers[i],i+1);
+
+        }
+
         return ints;
     }
 

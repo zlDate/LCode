@@ -8,7 +8,7 @@ import java.util.Arrays;
  * 如果给出 [1,2,0], return 3
  * 如果给出 [3,4,-1,1], return 2
  */
-public class FirstMissingPositive {
+public class FirstMissingPositiveTest {
 
     public static void main(String[] args) {
         int[] A = new int[]{1,1};
