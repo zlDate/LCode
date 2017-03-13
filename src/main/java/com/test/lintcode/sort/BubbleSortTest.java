@@ -21,7 +21,7 @@ public class BubbleSortTest {
         for(int i=nums.length-1;i>=0;i--){
             for(int j=0;j<i;j++){
                 if(nums[j]>nums[j+1]){
-                    swap(nums,j,j+1);
+                    SortUtils.swap(nums,j,j+1);
                 }
             }
         }
@@ -31,18 +31,13 @@ public class BubbleSortTest {
         for(int i=0;i<nums.length-1;i++){
             for(int j=i+1;j<nums.length;j++){
                 if(nums[j]<nums[i]){
-                    swap(nums,j,i);
+                    SortUtils.swap(nums,j,i);
                 }
             }
         }
 
 
     }
-    //交换数组中i和j的位置
-    private static void swap(int[] nums,int i,int j){
-        int tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-    }
+
 
 }

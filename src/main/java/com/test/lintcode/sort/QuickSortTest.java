@@ -11,7 +11,7 @@ package com.test.lintcode.sort;
 public class QuickSortTest {
 
     public static void main(String[] args) {
-        int [] nums = new int[]{5,4,3,2,1,0};
+        int [] nums = new int[]{10,20,15,0,6,7,2,1,-5,55};
 
         quickSort(nums);
 
@@ -42,17 +42,12 @@ public class QuickSortTest {
         for(int a=i;a<j;a++){   //从i遍历到j
             if(nums[a]<=x){
                 y++;    //有比x小的值，x正确位置所有后移一位
-                swap(nums,y,a);  //如果a位置的元素比x小则放到x前面
+                SortUtils.swap(nums,y,a);  //如果a位置的元素比x小则放到x前面
             }
         }
-        swap(nums,y+1,j);  //将j元素放到正确位置
+        SortUtils.swap(nums,y+1,j);  //将j元素放到正确位置
         return y+1;
     }
 
-    //交换数组中i和j的位置
-    private static void swap(int[] nums,int i,int j){
-        int tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-    }
+
 }
