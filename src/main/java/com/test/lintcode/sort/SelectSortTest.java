@@ -1,6 +1,5 @@
 package com.test.lintcode.sort;
 
-import java.io.FileNotFoundException;
 
 /**
  * Created by le on 2017/3/9.
@@ -10,7 +9,7 @@ import java.io.FileNotFoundException;
  */
 public class SelectSortTest {
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args){
         int [] nums = new int[]{10,20,15,0,6,7,2,1,-5,55};
         selectSort(nums);
         System.out.println(nums.length);
