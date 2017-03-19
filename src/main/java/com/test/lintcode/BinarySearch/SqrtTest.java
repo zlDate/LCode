@@ -2,6 +2,7 @@ package com.test.lintcode.BinarySearch;
 
 /**
  * Created by le on 2017/3/19.
+ * 141 x的平方根
  * 计算并返回x的平方根
  * sqrt(3) = 1
  * sqrt(4) = 2

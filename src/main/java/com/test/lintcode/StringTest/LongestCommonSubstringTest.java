@@ -2,6 +2,7 @@ package com.test.lintcode.StringTest;
 
 /**
  * Created by le on 2017/2/23.
+ * 79 最长公共子串
  * 给出两个字符串，找到最长公共子串，并返回其长度。
  * 给出A=“ABCD”，B=“CBCE”，返回 2
  */

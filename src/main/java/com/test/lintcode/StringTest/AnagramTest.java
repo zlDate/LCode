@@ -3,10 +3,9 @@ package com.test.lintcode.StringTest;
 import java.util.Arrays;
 
 /**
- *
- * 写出一个函数 anagram(s, t) 判断两个字符串是否可以通过改变字母的顺序变成一样的字符串。
  * Created by le on 2017/2/19.
- *
+ * 158 两个字符串是变位词
+ * 写出一个函数 anagram(s, t) 判断两个字符串是否可以通过改变字母的顺序变成一样的字符串。
  */
 public class AnagramTest {
 

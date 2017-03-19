@@ -2,12 +2,12 @@ package com.test.lintcode.StringTest;
 
 /**
  * Created by le on 2017/2/21.
+ * 55 比较字符串
  * 比较两个字符串A和B，确定A中是否包含B中所有的字符。字符串A和B中的字符都是 大写字母
  * 在 A 中出现的 B 字符串里的字符不需要连续或者有序。
  *  样例
- 给出 A = "ABCD" B = "ACD"，返回 true
- 给出 A = "ABCD" B = "AABC"， 返回 false
-
+ *  给出 A = "ABCD" B = "ACD"，返回 true
+ *  给出 A = "ABCD" B = "AABC"， 返回 false
  */
 public class CompareStringTest {
 

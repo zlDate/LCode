@@ -2,6 +2,7 @@ package com.test.lintcode.IntArray;
 
 /**
  * Created by le on 2017/2/26.
+ * 64 合并排序数组 II
  * 合并两个排序的整数数组A和B变成一个新的数组。
  * 你可以假设A具有足够的空间（A数组的大小大于或等于m+n）去添加B中的元素。
  * 给出 A = [1, 2, 3, empty, empty], B = [4, 5]
