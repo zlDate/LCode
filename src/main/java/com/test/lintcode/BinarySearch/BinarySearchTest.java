@@ -15,8 +15,14 @@ package com.test.lintcode.BinarySearch;
  */
 public class BinarySearchTest {
 
+    public static void main(String[] args) {
+        int[] nums = new int[]{};
+        binarySearch(nums,1);
 
-    public int binarySearch(int[] nums, int target) {
+    }
+
+    public static int binarySearch(int[] nums, int target) {
+        if(nums.length==0) return -1;
         int start = 0;
         int end = nums.length;
         //因为当start=end时 target有可能在start处 导致死循环 所以循环条件是start<end
