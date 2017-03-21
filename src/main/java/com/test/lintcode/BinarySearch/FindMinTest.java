@@ -11,15 +11,16 @@ package com.test.lintcode.BinarySearch;
 public class FindMinTest {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{6,1,2,3,4,5};
-        System.out.println(findMin(nums));
+        int[] nums = new int[]{-9,-8,-7,-6,-5,-4,-3,-2,-1,-10};
+        findMin(nums);
+
     }
 
     public static int findMin(int[] nums) {
         int start = 0;
-        int end = nums.length;
+        int end = nums.length-1;
         //如果数组是正常有序 直接返回第一个元素
-        if(nums[start]<nums[end-1]) return nums[start];
+        if(nums[start]<nums[end]) return nums[start];
         //如果不带=  则最后退出循环时 start>=end start处一定是最大的元素所以最后return时返回nums[start+1]
         while (start<=end){
             int mid = start+(end-start)/2;
