@@ -32,6 +32,7 @@ public class WoodCutTest {
         woodCut(L,2500);
     }
 
+    //如果取商的和来递减 最终结果应该是比较接近这个和的所以没有用二分
     public static int woodCut(int[] L, int k) {
         if(L.length==0) return 0;
         int quotientSum=0;
@@ -40,7 +41,7 @@ public class WoodCutTest {
             if(max<L[i]) max = L[i];
             quotientSum += L[i]/k;
         }
-        //当所有的木材长度都小于k时quotientSum=0此时应该以最长木材长度帝递减
+        //当所有的木材长度都小于k时quotientSum=0此时应该以最长木材长度递减
         if(quotientSum==0){
             quotientSum = max;
         }
