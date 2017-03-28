@@ -11,7 +11,7 @@ package com.test.lintCode.sort;
 public class QuickSortTest {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{10, 20, 15, 0, 6, 7, 2, 1, -5, 55};
+        int[] nums = new int[]{10, 20, 15, 0, 6, 7, 2, 1, -5, 55, -100};
 
         quickSort(nums);
 
@@ -36,18 +36,19 @@ public class QuickSortTest {
 
     }
 
-    //将j放到正确位置  返回正确位置的索引
+    //将j放到正确位置  返回正确位置的索引  使得在i-j段中j的左边全是小于j的元素 右边全是大于j的元素
     private static int partition(int[] nums, int i, int j) {
         int x = nums[j];    //以j为基准
-        int y = i - 1;  //y表示目标位置  默认在i-j所有元素前面
-        for (int a = i; a < j; a++) {   //从i遍历到j-1
+        int y = i;  //y记录目标位置  默认在i-j所有元素前面
+        for (int a = i; a < j; a++) {   //从i开始比较  一直到j-1
             if (nums[a] <= x) {
-                y++;    //有比x小的值，x正确位置所有后移一位
-                SortUtils.swap(nums, y, a);  //如果a位置的元素比x小则放到x前面
+                //如果a位置的元素比x小  则放到x所在的位置  然后x的位置后移一位
+                SortUtils.swap(nums, y, a);
+                y++;
             }
         }
-        SortUtils.swap(nums, y + 1, j);  //将j元素放到正确位置
-        return y + 1;
+        SortUtils.swap(nums, y, j);  //将j元素放到正确位置
+        return y;
     }
 
 
