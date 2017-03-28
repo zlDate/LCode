@@ -1,4 +1,4 @@
-package com.test.lintcode.sort;
+package com.test.lintCode.sort;
 
 /**
  * Created by le on 2017/3/5.
@@ -11,7 +11,7 @@ package com.test.lintcode.sort;
 public class QuickSortTest {
 
     public static void main(String[] args) {
-        int [] nums = new int[]{10,20,15,0,6,7,2,1,-5,55};
+        int[] nums = new int[]{10, 20, 15, 0, 6, 7, 2, 1, -5, 55};
 
         quickSort(nums);
 
@@ -19,34 +19,35 @@ public class QuickSortTest {
 
     }
 
-    private static void quickSort(int[] nums){
-        sort(nums,0,nums.length-1);
+    private static void quickSort(int[] nums) {
+        sort(nums, 0, nums.length - 1);
     }
 
-    //递归调用方法
-    private static void sort(int[] nums,int i,int j){
-        if (i<j){
+    //递归调用方法  将数组中从i-j的元素以j为基准  找到j的准确位置
+    private static void sort(int[] nums, int i, int j) {
+        if (i < j) {
             //将j放到正确位置  并返回位置索引
-            int x = partition(nums,0,j);
-            sort(nums,0,x-1);   //递归调用j前半段
-            sort(nums,x+1,j);   //递归调用j后半段
+            int x = partition(nums, i, j);
+
+            sort(nums, i, x - 1);   //递归调用j前半段
+            sort(nums, x + 1, j);   //递归调用j后半段
         }
 
 
     }
 
     //将j放到正确位置  返回正确位置的索引
-    private static int partition(int[] nums,int i,int j){
+    private static int partition(int[] nums, int i, int j) {
         int x = nums[j];    //以j为基准
-        int y = i-1;  //y表示目标位置
-        for(int a=i;a<j;a++){   //从i遍历到j
-            if(nums[a]<=x){
+        int y = i - 1;  //y表示目标位置  默认在i-j所有元素前面
+        for (int a = i; a < j; a++) {   //从i遍历到j-1
+            if (nums[a] <= x) {
                 y++;    //有比x小的值，x正确位置所有后移一位
-                SortUtils.swap(nums,y,a);  //如果a位置的元素比x小则放到x前面
+                SortUtils.swap(nums, y, a);  //如果a位置的元素比x小则放到x前面
             }
         }
-        SortUtils.swap(nums,y+1,j);  //将j元素放到正确位置
-        return y+1;
+        SortUtils.swap(nums, y + 1, j);  //将j元素放到正确位置
+        return y + 1;
     }
 
 
