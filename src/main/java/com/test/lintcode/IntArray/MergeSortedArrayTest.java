@@ -1,4 +1,4 @@
-package com.test.lintcode.IntArray;
+package com.test.lintCode.IntArray;
 
 /**
  * Created by le on 2017/2/26.

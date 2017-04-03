@@ -1,4 +1,4 @@
-package com.test.lintcode.StringTest;
+package com.test.lintCode.StringTest;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.test.lintcode.IntArray;
+package com.test.lintCode.IntArray;
 
 import java.util.Arrays;
 

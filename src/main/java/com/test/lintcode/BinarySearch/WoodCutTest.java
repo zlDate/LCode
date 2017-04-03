@@ -1,10 +1,8 @@
-package com.test.lintcode.BinarySearch;
+package com.test.lintCode.BinarySearch;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by le on 2017/3/21.

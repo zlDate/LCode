@@ -1,8 +1,6 @@
-package com.test.lintcode.IntArray;
+package com.test.lintCode.IntArray;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by le on 2017/2/26.

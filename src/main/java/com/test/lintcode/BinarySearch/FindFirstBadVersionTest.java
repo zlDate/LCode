@@ -1,4 +1,4 @@
-package com.test.lintcode.BinarySearch;
+package com.test.lintCode.BinarySearch;
 
 /**
  * public class SVNRepo {

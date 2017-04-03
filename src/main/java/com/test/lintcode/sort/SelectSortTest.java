@@ -1,4 +1,4 @@
-package com.test.lintcode.sort;
+package com.test.lintCode.sort;
 
 
 /**

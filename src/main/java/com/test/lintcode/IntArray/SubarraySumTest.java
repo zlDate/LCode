@@ -1,8 +1,6 @@
-package com.test.lintcode.IntArray;
+package com.test.lintCode.IntArray;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by le on 2017/2/25.
