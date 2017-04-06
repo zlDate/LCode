@@ -7,6 +7,7 @@ package com.test.lintCode.StringTest;
  * 你应该在 source 字符串中找出 target 字符串出现的第一个位置(从0开始)。
  * 如果不存在，则返回 -1。
  * KMP算法 o(n)
+ * http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html
  */
 public class strKmpTest {
 
@@ -54,7 +55,7 @@ public class strKmpTest {
                 j++;
             }else{
                 if(j!=0){
-                    i = i -j + j - next[j]; //j-next[j]为应该后移的为数
+                    i = i -j + j - next[j]; //j-next[j]为应该后移的位数
                 }else{  //j=0表示与匹配串首字符不匹配  后移一位
                     i++;
                 }
@@ -73,8 +74,6 @@ public class strKmpTest {
             String head = str.substring(0,i);
             String tail = str.substring(str.length()-i,str.length());
             if(head.equals(tail)) return i;
-
-
         }
         return 0;
     }
