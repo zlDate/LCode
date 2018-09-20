@@ -1,4 +1,4 @@
-package com.test.lintCode.sort;
+package com.test.lintcode.sort;
 
 /**
  * Created by le on 2017/3/18.

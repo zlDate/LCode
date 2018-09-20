@@ -1,4 +1,4 @@
-package com.test.lintCode.greedy;
+package com.test.lintcode.greedy;
 
 /**
  * Created by le on 2017/4/16.

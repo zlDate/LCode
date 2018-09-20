@@ -1,4 +1,4 @@
-package com.test.lintCode.StringTest;
+package com.test.lintcode.StringTest;
 
 /**
  * Created by le on 2017/2/24.
@@ -17,7 +17,7 @@ public class AtoiTest {
 //        double i = 2147483647.0;
 //        System.out.println((int)i*-1);
 
-        atoi("-0");
+        System.out.println(Integer.MAX_VALUE);
 
     }
 

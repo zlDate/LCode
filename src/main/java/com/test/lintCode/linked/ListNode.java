@@ -1,4 +1,4 @@
-package com.test.lintCode.linked;
+package com.test.lintcode.linked;
 
 /**
  * Created by le on 2017/4/21.

@@ -1,4 +1,4 @@
-package com.test.lintCode.binaryOperation;
+package com.test.lintcode.binaryOperation;
 
 /**
  * Created by le on 2017/4/5.

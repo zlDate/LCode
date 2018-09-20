@@ -1,4 +1,4 @@
-package com.test.lintCode.sort;
+package com.test.lintcode.sort;
 
 
 /**
@@ -18,7 +18,9 @@ public class SelectSortTest {
 
 
     private static void selectSort(int[] nums){
-        if(nums.length<=0) return;
+        if(nums.length<=0) {
+            return;
+        }
 
         for(int i=0;i<nums.length;i++){
             int min = nums[i];

@@ -1,4 +1,4 @@
-package com.test.lintCode.BinarySearch;
+package com.test.lintcode.BinarySearch;
 
 /**
  * Created by le on 2017/3/20.

@@ -1,4 +1,4 @@
-package com.test.lintCode.greedy;
+package com.test.lintcode.greedy;
 
 import java.util.Arrays;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package com.test.lintCode.BinarySearch;
+package com.test.lintcode.BinarySearch;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

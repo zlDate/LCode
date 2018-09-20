@@ -1,4 +1,4 @@
-package com.test.lintCode.StringTest;
+package com.test.lintcode.StringTest;
 
 /**
  * Created by le on 2017/2/21.

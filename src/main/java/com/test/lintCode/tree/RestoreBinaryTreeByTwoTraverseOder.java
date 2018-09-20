@@ -1,4 +1,4 @@
-package com.test.lintCode.tree;
+package com.test.lintcode.tree;
 
 /**
  * Created by le on 2017/3/11.
